@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Nested Tables</h1>
+    <table border="1px">
+      <thead>
+        <tr>
+          <td>Header column 1</td>
+          <td>Header column 2</td>
+          <td>Header column 3</td>
+          <td>Header column 4</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Row2 Item 1</td>
+          <td rowspan="2">Row2 Item 2</td>
+          <td rowspan="3">Row2: Table 1
+            <table border="1"><tr><td>Row 1header</td>
+            <td>item</td></tr>
+            <tr><td>Row 2header</td>
+                <td>item</td></tr></table>
+          </td>
+          <td rowspan=>Row2 Item 4</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          
+          <td>Row#:Nested Table 2 <table border="1"><tr><td>Row 1header</td>
+            <td>item</td></tr>
+            <tr><td>Row 2header</td>
+                <td>item</td></tr></table></td>
+          <td>Row#:Nested Table 2</td>
+          <td>Row#:Nested Table 2</td>
+          <td rowspan="5">Row#:Nested Table 2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          
+            <td colspan="4">Row5:Last riw of outer table</td></tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
